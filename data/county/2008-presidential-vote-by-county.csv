@@ -1,4 +1,10 @@
 fips,election,candidate,party,vote
+2,2008,"John S. McCain, III",Republican,193841
+2,2008,Barack H. Obama,Democratic,123594
+2,2008,Ralph Nader,Independent,3783
+2,2008,Write-ins,-,1730
+2,2008,Charles O. Baldwin,Alaskan Ind.,1660
+2,2008,Bob Barr,Libertarian,1589
 1073,2008,Barack H. Obama,Democratic,166121
 1073,2008,"John S. McCain, III",Republican,149921
 1073,2008,Bob Barr,Independent,793

@@ -1,0 +1,5 @@
+test.csv
+*.vscode
+launch.json
+backup/
+sql/

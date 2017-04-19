@@ -40,14 +40,14 @@ def get_muni_results(fips, year, muni):
 def create_results_csv(outfile, year):
     headers = ['fips','county','state']
     with open(outfile, 'a', newline='') as fout:
-        with open('data/fips/fips.csv') as fin:
+        with open('data/geo/fips/fips.csv') as fin:
             reader = csv.reader(fin)
-            reader.__next__() # skips over header
             writer = csv.writer(fout)
             writer.writerow(headers)
             for fips in reader:
                 try:
                     vote = []
+                    print(fips[0])
                     if fips[0] != 2:
                         vote = get_muni_results(fips[0], year, 'c')
                         writer.writerows(vote)
@@ -59,6 +59,6 @@ def create_results_csv(outfile, year):
                     print(fips[0] + ' FAILED')
 
 if __name__ == '__main__':
-    years = [2000,2004,2008,2012,2016]
+    years = [2000,2004,2008,2012, 2016]
     for year in years:
-        create_results_csv('test.csv', year)
+        create_results_csv('2000-thru-2016-presidential-vote-by-county.csv', year)

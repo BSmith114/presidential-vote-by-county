@@ -9,4 +9,4 @@ CREATE TABLE pres_vote
 
 --Copies data to table - use your own path here
 
-COPY pres_vote FROM 'C:\Projects\presidential-vote-by-county\data\county\2000-2016-presidential-vote-by-county.csv' DELIMITER ',' CSV;
+COPY pres_vote FROM 'C:\Projects\presidential-vote-by-county\data\vote\county\2000-2016-presidential-vote-by-county.csv' DELIMITER ',' CSV;
